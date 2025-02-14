@@ -1,0 +1,37 @@
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Angular build artifacts
+dist/
+out-tsc/
+coverage/
+.angular/
+
+# Compiled TypeScript files
+*.js
+*.js.map
+*.d.ts
+
+# Logs and IDE files
+*.log
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Angular environment files (if not version-controlled)
+src/environments/environment*.ts
+
+# Temporary and cache files
+temp/
+tmp/
+*.bak
+*.swp
+*.swo
+
+# Git-related files
+.git/

@@ -14,7 +14,7 @@ This is a simple Angular application that fetches and displays user data from an
 
 Step 1: Clone the repository
 ```
-git clone git@github.com:ggkm3251/product-bay.git
+git clone git@github.com:ggkm3251/angular-user-list.git
 cd product-bay
 ```
 Step 2: Install dependencies
@@ -37,7 +37,7 @@ angular-user-list/
 │   │   ├── user-list/
 │   │   │   ├── user-list.component.ts
 │   │   │   ├── user-list.component.html
-│   │   │   ├── user-list.component.css
+│   │   │   ├── user-list.component.scss
 │   ├── main.ts
 │── angular.json
 │── package.json
