@@ -1,0 +1,23 @@
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+h3, p {
+  color: black !important;
+}
+
+body {
+  background-color: white !important;
+}
+
+* {
+  animation: none !important;
+  transition: none !important;
+}

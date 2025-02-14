@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>User List</h2>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Search Users</mat-label>
+    <input matInput [formControl]="searchControl" placeholder="Type to search..." />
+  </mat-form-field>
+
+  <div *ngIf="isLoading">Loading...</div>
+  <div *ngIf="errorMessage">{{ errorMessage }}</div>
+
+  <mat-list *ngIf="!isLoading && !errorMessage">
+    <mat-list-item *ngFor="let user of filteredUsers">
+      <h3 matLine>{{ user.name }}</h3>
+      <p matLine>Email: {{ user.email }}</p>
+      <p matLine>Phone: {{ user.phone }}</p>
+    </mat-list-item>
+  </mat-list>
+</div>
