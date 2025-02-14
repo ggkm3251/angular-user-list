@@ -32,16 +32,29 @@ http://localhost:4200
 ## Simple Project Structure
 ```
 angular-user-list/
-│── src/
-│   ├── app/
-│   │   ├── user-list/
-│   │   │   ├── user-list.component.ts
-│   │   │   ├── user-list.component.html
-│   │   │   ├── user-list.component.scss
-│   ├── main.ts
-│── angular.json
-│── package.json
-│── README.md
+│── src/                            # Root source folder
+│   ├── app/                        # Main application folder
+│   │   ├── components/             # Holds all reusable components
+│   │   │   ├── user-list/          # UserListComponent directory
+│   │   │   │   ├── user-list.component.ts        # Component logic (TypeScript)
+│   │   │   │   ├── user-list.component.html      # Component template (HTML)
+│   │   │   │   ├── user-list.component.scss      # Component styles (SCSS)
+│   │   │   │   ├── user-list.component.spec.ts   # Unit tests for UserListComponent
+│   │   ├── app.component.ts        # Root component logic
+│   │   ├── app.component.html      # Root component template (HTML)
+│   │   ├── app.component.scss      # Root component styles
+│   ├── assets/                     # Store static assets like images/icons
+│   ├── environments/               # Environment-specific configurations
+│   │   ├── environment.ts          # Development environment settings
+│   │   ├── environment.prod.ts     # Production environment settings
+│   ├── main.ts                     # Entry point, bootstraps Angular app
+│   ├── styles.scss                  # Global application styles
+│   ├── index.html                   # Main HTML file for the app
+│── .gitignore                      # Ignore unnecessary files from Git
+│── angular.json                    # Angular project configuration
+│── package.json                     # Project dependencies & scripts
+│── README.md                        # Instructions on how to run the project
+
 ```
 ## Author
 This project is designed, developed and maintained by: [Glenn Mwangi](https://github.com/ggkm3251)
